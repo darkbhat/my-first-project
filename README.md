@@ -1,48 +1,21 @@
-students = []
+# My First GitHub Project
 
-def add_student():
-    name = input("Enter student name: ")
-    roll = input("Enter roll number: ")
-    course = input("Enter course: ")
+This is a simple Python Student Management System created as my first GitHub project.
 
-    students.append({
-        "name": name,
-        "roll": roll,
-        "course": course
-    })
+## 📌 About the Project
+This program allows users to:
+- Add student details
+- View all added students
 
-    print("Student added successfully!\n")
+It is a beginner-friendly project written in Python using basic concepts like lists, functions, and loops.
 
+## 🛠️ Technologies Used
+- Python
 
-def view_students():
-    if not students:
-        print("No students found.\n")
-        return
+## ▶️ How to Run the Project
+1. Make sure Python is installed
+2. Open a terminal in the project folder
+3. Run the command:
 
-    print("\nStudent List:")
-    for s in students:
-        print(f"Name: {s['name']}, Roll: {s['roll']}, Course: {s['course']}")
-    print()
-
-
-def menu():
-    while True:
-        print("=== Student Management System ===")
-        print("1. Add Student")
-        print("2. View Students")
-        print("3. Exit")
-
-        choice = input("Enter choice: ")
-
-        if choice == "1":
-            add_student()
-        elif choice == "2":
-            view_students()
-        elif choice == "3":
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice\n")
-
-
-menu()
+```bash
+python main.py
