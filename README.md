@@ -1,4 +1,4 @@
-Python
+
 students = []
 
 def add_student():
